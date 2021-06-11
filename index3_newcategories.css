@@ -1,0 +1,253 @@
+@import url('fonts.googleapis.com/earlyaccess/notosanskr.css');
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Noto Sans KR',
+}
+body
+{
+ background: #23233d;
+ width: 100%;
+ height: 100vh;
+}
+#mainbox{
+     font-size: 24px;
+     cursor: pointer;
+     transition: all .6s;
+     z-index: auto;
+     background: #fff;
+    }
+    .sidemenu{
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     height: 100%;
+     width: 0px;
+     background-color: #181829;
+     z-index: 1;
+     padding-top: 100px;
+     overflow-x: hidden;
+     transition: all .5s;
+    }
+    .sidemenu a{
+     padding: 8px 8px 8px 64px;
+     text-decoration: none;
+     font-size: 20px;
+     color: #fff;
+     display: block;
+    }
+    .sidemenu a:hover{
+      color: #0ac1fd;
+    }
+    .sidemenu .closebtn{
+     position: absolute;
+     top: 0px;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 32px;
+    }
+    
+
+.bg
+{
+ position: relative;
+ width: 100%;
+ height: 100vh;
+ background: #fff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ overflow: hidden;
+ margin-top: 0%;
+}
+.bg h2
+{
+ position: relative;
+ color: #fff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+.text1
+{
+ text-align: center;
+ text-overflow: ellipsis;
+}
+.SkewedOne
+{
+ position: absolute;
+ bottom: -100%;
+ Left: 50%;
+ width: 100%;
+ height: 100%;
+ background: #23233d;
+ transform: skewY(-15deg);
+ transform-origin: top left;
+}
+.SkewedTwo
+{
+ position: absolute;
+ bottom: -100%;
+ right: 50%;
+ width: 100%;
+ height: 100%;
+ background: #23233d;
+ transform: skewY(15deg);
+ transform-origin: top right;
+}
+section
+{
+ padding:100px;
+}
+section h2
+{
+ color: rgb(255, 255, 255);
+ font-size: 1.2em;
+ margin-bottom: 20px;
+ margin-top: -40px;
+ align-items: center;
+ display: flex;
+ justify-content: center;
+
+}
+section p
+{
+ color: #fff;
+ font-size: 1em;
+ line-height:30px;
+ letter-spacing: 0.5px;
+}
+
+ .neontext
+{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 105vh;
+ width: 100%;
+ background: #23233d;
+ font-family: 'Black Han Sans', sans-serif;
+ position: relative;
+ overflow: hidden;
+}
+.neontext .neon_container
+{
+ position: absolute;    
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.neontext .neon_container h2
+{
+ position: relative;
+ width: 100%;
+ text-align: justify;
+ text-transform: uppercase;
+ color: #282b4b;
+ font-size: 6em;
+ letter-spacing: 4px;
+ white-space: nowrap;
+ font-weight: initial;
+}
+.neontext .neon_container h2 span
+{
+ position: relative;
+ z-index: 1;
+ color: #282b4b;
+ animation: animate 5s linear infinite;    
+}
+.neontext .neon_container h2 span.text2
+{
+ animation-delay: -0.5s;
+
+}
+.neontext .neon_container h2 span.text3
+{
+ animation-delay: -1s;
+  
+}
+.neontext .neon_container h2 span.text4
+{
+ animation-delay: -1.5s;
+  
+}
+@keyframes animate
+{
+ 0%,5%,10.1%,15.1%,25.1%,45%,70.1%,90%,100%
+ {
+      color:#282b4b;
+      text-shadow: 0 0 0 #282b4b;
+ }    
+ 5.1%,10%,15.2%,25%,45.1%,70%,90.1%
+ {
+      color:#fff;
+      text-shadow: 0 0 10px #6a73fb,
+                   0 0 20px #6a73fb,
+                   0 0 40px #6a73fb,
+                   0 0 80px #6a73fb,
+                   0 0 160px #6a73fb;
+ }    
+}
+
+.container
+{
+ position: relative;
+ max-width: 100%;
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+ grid-template-rows: minmax(300px, auto);    
+ margin: 40px;
+ grid-auto-flow: dense;
+ grid-gap: 10px;
+
+}
+.container .box
+{
+ background: #6a73fb;
+ padding: 20px;
+ display: grid;
+ font-size: 16.5px; 
+ place-items: center;
+ text-align: center;
+ color: #282b4b;
+ transition: 0.5s;   
+ font-weight: bold;
+}
+.container .box:hover
+{
+ background: #0ac1fd;
+ cursor: pointer;        
+}
+.container .box img
+{
+ position: relative;
+ max-width: 100px;
+ margin-bottom: 10px; 
+}
+.Sorce
+{
+ color: #6a73fb;
+ font-size: 15px;
+ place-items: center;
+ text-align: center;
+ font-weight: bold;
+ margin-top: 4%;
+ margin-bottom: 4%;
+}
+
+@media (max-width: 991px)
+{
+     .container
+     {
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      grid-template-rows: minmax(auto, auto);    
+     }  
+     .container .box
+     {
+     grid-column: unset !important;
+     grid-row: unset !important; 
+     }  
+}

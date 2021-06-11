@@ -1,0 +1,31 @@
+.gnb-menu
+{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ height: 100vh;    
+}
+.gnb-menu a
+{
+ font-size: 24px;
+ color: #282b4b;
+ text-decoration: none;
+ position: relative;
+ padding: 6px 12px;
+}
+.gnb-menu a::after 
+{
+ content: "";
+ position: absolute;
+ bottom: 0;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 0;    
+ height: 4px;
+ background: #0ac1fd;
+ transition: all .5s ease-out;
+}
+.gnb-menu a:hover::after
+{
+ width: 100%;    
+}
