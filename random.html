@@ -1,0 +1,59 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>엉터리 한국어 바로잡기</title>
+    <link rel="stylesheet" href="style_random.css">
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="main center">
+      <input type="checkbox" id="checkbtn" />
+      <label for="checkbtn" class='btn' >
+        <script>
+          const container = document.querySelector('.main center')
+          for (var i = 0; i <= 100; i++){
+           const blocks = document.createElement('div');
+           blocks.classList.add('block');
+           container.appendChild(blocks);
+          }
+     
+          function animateBlocks(){
+           anime({
+            targets: '.main center',
+            translateX: function(){
+             return anime.random(-700,700);
+            },
+            translateY: function(){
+             return anime.random(-500,500);
+            },
+            scale: function(){
+             return anime.random(1,5);
+            },
+     
+            easing: 'linear',
+            duration: 3000,
+            delay: anime.stagger(10),
+            complete: animateBlocks,
+           })
+          }
+     
+          animateBlocks()
+         </script>
+         <div class= "text">
+          <a>open</a>
+        </div>
+      </label>
+      <div class="box center">
+        <h2>hello</h2>
+        <label for="checkbtn" class='btn'>
+          <a>close</a>
+        </label>
+      </div>
+      <div class="overlay"></div>
+    </div>
+       </body>
+     </html>
+      
+
+    

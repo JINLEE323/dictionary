@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flip Book</title>
+<link rel="stylesheet" href="flipbook.css">
+</head> 
+<body>
+     <div class="container">
+          <div class="toggle" onclick="location.href='index3_newcategories.html'"></div>
+         </div>
+     <div class="book">
+          <input type="checkbox" id="c1">
+          <input type="checkbox" id="c2">
+          <input type="checkbox" id="c3">
+          <div id="cover"><img src="flip5.png"></div>
+          <div class="flip-book">
+               <div class="flip" id="p1">
+                    <div class="back">
+                         <img src="flip7.png">
+                         <label class="back-btn" for="c1">◀</label>     
+                    </div>
+                    <div class="front">
+                         <img src="flip6.png">
+                         <label class="next-btn" for="c1">▶</label>
+                    </div>
+               </div>
+
+               <div class="flip" id="p2">
+                    <div class="back">
+                         <img src="flip9.png">
+                         <label class="back-btn" for="c2">◀</label>     
+                    </div>
+                    <div class="front">
+                         <img src="flip8.png">
+                         <label class="next-btn" for="c2">▶</label>
+                    </div>
+               </div>
+
+               <div class="flip" id="p3">
+                    <div class="back">
+                         <label class="back-btn" for="c3">◀</label>     
+                    </div>
+                    <div class="front">
+                         <img src="flip10.png">
+                         <label class="next-btn" for="c3">▶</label>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</body>    
+</html>
